@@ -1,0 +1,127 @@
+/* MISC */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* MAIN LAYOUT */
+#layoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 173px;
+}
+
+h1 {
+    font-family: Degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+p {
+    font-family: Degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button {
+    height: 60px;
+    width: 232px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* MARS */
+#clockMars {
+    font-family: Degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 200px;
+    color: rgb(63, 44, 50);
+
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#textMars {
+    color: rgb(180, 101, 32);
+}
+
+#buttonMars {
+    background-color: rgb(180, 101, 32);
+}
+
+#buttonMars:hover {
+    background-color: rgb(255, 96, 2);
+}
+
+.planet {
+    margin-left: 200px;
+    position: absolute;
+
+    animation-name: rotation;
+    animation-direction: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+/* EARTH */
+#clockEarth {
+    font-family: Degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 200px;
+    color: rgb(15, 22, 50);
+
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#textEarth {
+    color: rgb(91, 103, 153);
+}
+
+#buttonEarth {
+    background-color: rgb(91, 103, 153);
+}
+
+#buttonEarth:hover {
+    background-color: rgb(40, 56, 115);
+}
+
+.bird {
+    margin-right: 200px;
+    margin-top: 100px;
+    position: absolute;
+
+    animation-name: backAndForth;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backAndForth {
+    from {transform: translateX(-600px);}
+    to {transform: translateX(400px);}
+}

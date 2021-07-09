@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge 2</title>
+        <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+        <script src="scripts/main.js" defer></script>
+        <link rel="stylesheet" href="https://use.typekit.net/uqv2ovt.css">
+    </head>
+    <body onload="realMarsClock()">
+        <div id="layoutContainer" style="background-image: url(images/mars.jpeg);">
+            <!--Title of the page to know this is the time on Earth-->
+            <div>
+                <h1 id="textMars">Mars Time</h1>
+            </div>
+            <!--This is where the real time clock will be displayed-->
+            <div id="clockMars">
+            </div>
+            <!--This is where a planet is being displayed-->
+            <div>
+                <img src="images/planet.png" width= "260px" class="planet"/>
+            </div>
+            <!--A button in order to convert to the clock on Earth-->
+            <div>
+                <a href="earthTime.html">
+                    <button id="buttonMars">
+                        <p>Earth Time</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
